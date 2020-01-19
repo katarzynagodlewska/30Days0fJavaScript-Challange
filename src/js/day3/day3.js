@@ -41,14 +41,56 @@ console.log(`y0 = ${y0}`);
 console.log(`x0 = ${x0}`);
 
 //ex 9
-let hours = prompt('Enter hours');
+let hoursOfWork = prompt('Enter hours');
 let ratePerHour = prompt('Enter rate per hour');
-let earning = hours * ratePerHour;
+let earning = hoursOfWork * ratePerHour;
 console.log(`Your weekly earning is ${earning}`);
 
 //ex 10
 let myName = 'Katarzyna';
 myName.length > 7
     ? console.log('My name is long')
-    : console.log('My name is short');
+    : console.log('My name is short')
+;
 
+//ex 11
+let firstName = prompt('Enter your first name')
+let lastName = prompt('Enter your family name')
+firstName.length > lastName.length
+    ? console.log(`Your first name, ${firstName} is longer than your family name, ${lastName}`)
+    : (firstName.length < lastName.length ?
+     console.log(`Your first name, ${firstName} is shorter than your family name, ${lastName}`) 
+     : console.log(`Your first name, ${firstName} and your family name, ${lastName} have got the same length`))
+;
+
+//ex 12
+let myAge = 23;
+let yourAge = 37;
+let diff = yourAge - myAge
+console.log(`You are ${diff} years older than me`);
+
+//ex 13
+let birthYear = prompt('Enter your birth year');
+let nowTime = new Date()
+const yearNow = nowTime.getFullYear()
+let age = yearNow - birthYear
+let difference = 18 - age
+age >= 18 
+    ? console.log(`You are ${age}. You are old enough to drive`)
+    : console.log(`You are ${age}. You will be allowed to drive after ${difference} years.`)
+;
+//ex 14
+const years = prompt('Enter number of years you live')
+const seconds = years * 31536000;
+console.log(`You lived ${seconds} seconds.`)
+
+//ex 15
+const now = new Date();
+const year = now.getFullYear()
+const month = now.getMonth() + 1
+const date = now.getDate()
+const hours = now.getHours()
+const minutes = now.getMinutes()
+console.log(`${year}-${month}-${date} ${hours}:${minutes}`);
+console.log(`${date}-${month}-${year} ${hours}:${minutes}`);
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`);

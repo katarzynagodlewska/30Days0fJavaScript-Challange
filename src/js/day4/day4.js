@@ -17,7 +17,7 @@ if (scores >= 0 && scores < 50) {
 }
 
 //ex 2
-/*let monthUserInput = prompt('What month is now?');
+let monthUserInput = prompt('What month is now?');
 let month = monthUserInput.toLowerCase();
 
 switch (month) {
@@ -60,7 +60,6 @@ switch (month) {
     default :
         console.log('It is not a month')
 }
-*/
 
 //ex 3
 let dayUserInput = prompt('What day is today?');
