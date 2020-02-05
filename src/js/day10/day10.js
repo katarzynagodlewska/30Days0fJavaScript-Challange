@@ -21,3 +21,12 @@ setOfCountries = new Set (countries)
 setOfCountries.delete('Sweden')
 console.log(setOfCountries.size)
 
+setOfCountries.clear()
+console.log(setOfCountries)
+
+setOfCountriesWithLoop = new Set()
+for (const country of countries) {
+    setOfCountriesWithLoop.add(country)
+}
+console.log(setOfCountriesWithLoop)
+
